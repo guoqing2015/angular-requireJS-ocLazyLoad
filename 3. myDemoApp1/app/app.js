@@ -41,6 +41,9 @@ define(['angular', 'angular-route', 'oc-lazy-load'], function () {
                     }
                 })
 
+                .otherwise({
+                    redirectTo: "/home"
+                })
 
         }]);
 
