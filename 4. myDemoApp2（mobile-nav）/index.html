@@ -6,15 +6,14 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
     <meta content="telephone=no" name="format-detection"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
-    <title>中国智能</title>
-
+    <title>angular + requireJS + ocLazyLoad + mobileNav</title>
     <script>
 //        document.write("<link rel='stylesheet' href='styles/common.css?v=" + new Date().getTime() + "'>");
         document.write("<link rel='stylesheet' href='styles/mobile-nav.css?v=" + new Date().getTime() + "'>");
-//        document.write("<link rel='stylesheet' href='styles/navbar.css?v=" + new Date().getTime() + "'>");
-//        document.write("<link rel='stylesheet' href='styles/loading.css?v=" + new Date().getTime() + "'>");
-//        document.write("<link rel='stylesheet' href='styles/icon.css?v=" + new Date().getTime() + "'>");
-//        document.write("<link rel='stylesheet' href='styles/modal.css?v=" + new Date().getTime() + "'>");
+        document.write("<link rel='stylesheet' href='styles/navbar.css?v=" + new Date().getTime() + "'>");
+        document.write("<link rel='stylesheet' href='styles/loading.css?v=" + new Date().getTime() + "'>");
+        document.write("<link rel='stylesheet' href='styles/icon.css?v=" + new Date().getTime() + "'>");
+        document.write("<link rel='stylesheet' href='styles/modal.css?v=" + new Date().getTime() + "'>");
 //        document.write("<link rel='stylesheet' href='styles/tab.css?v=" + new Date().getTime() + "'>");
 //        document.write("<link rel='stylesheet' href='styles/swiper.3.2.0.min.css?v=" + new Date().getTime() + "'>");
 //        document.write("<link rel='stylesheet' href='styles/page.css?v=" + new Date().getTime() + "'>");
@@ -23,13 +22,11 @@
 <body>
 
 
-<!--<div data-ng-view></div>-->
-
 <mobile-view></mobile-view>
-<ui-loading loading-text="loadingText" show-loading="showLoading"></ui-loading>
-<ui-modal modal="modal"></ui-modal>
 
 
-<script data-main="main" src="../bower_components/requirejs/require.js"></script>
+
+
+<script data-main="main" src="components/requirejs/require.js"></script>
 </body>
 </html>

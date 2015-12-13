@@ -1,5 +1,10 @@
 'use strict';
 
+
+
+
+
+
 angular.module('page1',[]);
 
 angular.module('page1').controller('page1Controller',['$scope', 'service1', '$ocLazyLoad', function($scope, service1, $ocLazyLoad){

@@ -73,30 +73,37 @@ body, html {
   color: #ffffff;
 }
 
-.home-nav {
-  z-index: 999;
-  white-space: nowrap;
-}
-.home-nav .home-nav-inner {
-  padding: 0 1.25rem;
-}
+
 .home-nav li {
-  float: left;
-  color: #fee662;
-  text-align: center;
-  margin: 0 1.875rem 0 0;
-}
-.home-nav li > div {
-  height: 5.625rem;
-  width: 5.5rem;
-  line-height: 5.625rem;
-  margin: 0 auto 0.625rem;
-}
-.home-nav li > p {
-  width: 5.5rem;
-  margin: 0 auto;
+  border-bottom: 1px solid blue;
+  height: 50px;
+  line-height: 50px;
   text-align: center;
 }
+/*.home-nav {*/
+  /*z-index: 999;*/
+  /*white-space: nowrap;*/
+/*}*/
+/*.home-nav .home-nav-inner {*/
+  /*padding: 0 1.25rem;*/
+/*}*/
+/*.home-nav li {*/
+  /*float: left;*/
+  /*color: #fee662;*/
+  /*text-align: center;*/
+  /*margin: 0 1.875rem 0 0;*/
+/*}*/
+/*.home-nav li > div {*/
+  /*height: 5.625rem;*/
+  /*width: 5.5rem;*/
+  /*line-height: 5.625rem;*/
+  /*margin: 0 auto 0.625rem;*/
+/*}*/
+/*.home-nav li > p {*/
+  /*width: 5.5rem;*/
+  /*margin: 0 auto;*/
+  /*text-align: center;*/
+/*}*/
 
 .home-listitem dt {
   height: 3.75rem;

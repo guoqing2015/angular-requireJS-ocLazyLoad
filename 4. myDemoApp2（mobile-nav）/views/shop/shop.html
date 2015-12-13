@@ -1,0 +1,20 @@
+﻿<div ng-controller="shopController as shop">
+    <div class="navbar border-bottom">
+        <div class="navbar-inner">
+            <div class="navbar-left" ng-click="$navigate.back()">
+                <a href="javascript:void(0);">
+                    <i class="icon-public icon-nav-back"></i>
+                </a>
+            </div>
+            <h2 class="navbar-center">店铺</h2>
+            <div class="navbar-right" ng-click="$navigate.go('/home')">
+                <a href="javascript:void(0);">
+                    <i class="icon-public icon-nav-home"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ui-loading loading-text="loadingText" show-loading="showLoading"></ui-loading>
+<ui-modal modal="modal"></ui-modal>

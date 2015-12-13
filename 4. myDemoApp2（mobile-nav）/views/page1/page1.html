@@ -1,0 +1,34 @@
+﻿<div class="container" ng-controller="page1Controller as page1">
+
+    <div class="navbar border-bottom">
+        <div class="navbar-inner">
+            <div class="navbar-left" ng-click="$navigate.back()">
+                <a href="javascript:void(0);">
+                    <i class="icon-public icon-nav-back"></i>
+                </a>
+            </div>
+            <h2 class="navbar-center">page1</h2>
+            <div class="navbar-right" ng-click="$navigate.go('/home')">
+                <a href="javascript:void(0);">
+                    <i class="icon-public icon-nav-home"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section style="margin-top:200px; margin-left: 50px;">
+        <div class="well">
+            <button class="btn btn-primary btn-lg" ng-click="loadModule()">Load Module</button>
+        </div>
+
+
+        <p class="lead">{{ page1.message }}</p>
+
+        <div ng-if="module.ready">
+            <div ng-controller="utilCtrl as util">
+                <p class="lead">{{ util.greeting }}</p>
+            </div>
+        </div>
+    </section>
+
+</div>
