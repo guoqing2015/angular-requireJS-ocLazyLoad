@@ -1,0 +1,130 @@
+.content .modal, .content .modal-overlay {
+  padding: 0;
+}
+
+.modal-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100% !important;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 10000;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+}
+
+.modal-overlay.modal-overlay-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-line {
+  height: 1px;
+  background: #b5b5b5;
+}
+
+.modal {
+  background: #e8e8e8;
+  visibility: hidden;
+  margin-top: -6.875rem;
+  width: 33.75rem;
+  position: absolute;
+  z-index: 11000;
+  left: 50%;
+  margin-left: -16.875rem;
+  top: 50%;
+  text-align: center;
+  border-radius: 0.875rem;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 0, 0) scale(1.185);
+  -ms-transform: translate3d(0, 0, 0) scale(1.185);
+  transform: translate3d(0, 0, 0) scale(1.185);
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity;
+}
+
+.modal.modal-in {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-transform: translate3d(0, 0, 0) scale(1);
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+.modal.modal-out {
+  visibility: visible;
+  opacity: 0;
+  z-index: 10999;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-transform: translate3d(0, 0, 0) scale(0.815);
+  transform: translate3d(0, 0, 0) scale(0.815);
+}
+
+.modal-inner {
+  margin: 0 0.875rem;
+  padding: 1.875rem 1rem;
+  overflow: hidden;
+  background: #e8e8e8;
+}
+
+.modal-title {
+  font-weight: 500;
+  text-align: center;
+}
+
+.modal-title + .modal-text {
+  margin-top: 0.625rem;
+}
+
+.modal-buttons {
+  margin: 0 0.875rem;
+  height: 5.5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.modal-button.modal-button-bold {
+  font-weight: 500;
+}
+
+.modal-button:last-child {
+  border-right: none;
+}
+
+.modal-button {
+  width: 100%;
+  height: 5.5rem;
+  line-height: 5.5rem;
+  text-align: center;
+  color: #09bb07;
+  background: #e8e8e8;
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-right: 1px solid #b5b5b5;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+}

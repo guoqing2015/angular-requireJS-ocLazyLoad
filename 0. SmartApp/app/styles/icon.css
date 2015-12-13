@@ -1,0 +1,476 @@
+@charset "UTF-8";
+/**
+ * 一. 使用compass自动合并css雪碧图   参考: http://www.w3ctech.com/topic/620
+ *                                      http://www.w3cplus.com/preprocessor/intermediate/spriting-with-sass-and-compass.html
+ **/
+.icon-public, .icon-down-triangle, .icon-filter, .icon-home-activity, .icon-home-competitive, .icon-home-dianpu, .icon-home-huiyuan, .icon-home-huodong, .icon-home-jifen, .icon-home-kefu, .icon-home-leftarrow, .icon-home-map, .icon-home-part, .icon-home-rightarrow, .icon-home-search, .icon-home-vip, .icon-home-youhuiquan, .icon-member-about, .icon-member-coupon, .icon-member-gift, .icon-member-integration, .icon-member-notice, .icon-member-order, .icon-member-storeup, .icon-member-vip, .icon-memberintegral-textbg, .icon-nav-back, .icon-nav-home, .icon-register-checked, .icon-register-code, .icon-register-lineup, .icon-register-telephone, .icon-register-unchecked, .icon-right-arrow {
+  background-image: url('../images/icon-s08707ac398.png');
+  background-repeat: no-repeat;
+}
+
+.icon-down-triangle {
+  background-position: 0 0;
+  height: 7px;
+  width: 14px;
+}
+
+.icon-filter {
+  background-position: 0 -12px;
+  height: 35px;
+  width: 35px;
+}
+
+.icon-home-activity {
+  background-position: 0 -52px;
+  height: 40px;
+  width: 40px;
+}
+
+.icon-home-competitive {
+  background-position: 0 -97px;
+  height: 40px;
+  width: 40px;
+}
+
+.icon-home-dianpu {
+  background-position: 0 -142px;
+  height: 88px;
+  width: 88px;
+}
+.icon-home-dianpu:active, .icon-home-dianpu.home-dianpu-active {
+  background-position: 0 -235px;
+}
+
+.icon-home-huiyuan {
+  background-position: 0 -328px;
+  height: 88px;
+  width: 88px;
+}
+.icon-home-huiyuan:active, .icon-home-huiyuan.home-huiyuan-active {
+  background-position: 0 -421px;
+}
+
+.icon-home-huodong {
+  background-position: 0 -514px;
+  height: 88px;
+  width: 88px;
+}
+.icon-home-huodong:active, .icon-home-huodong.home-huodong-active {
+  background-position: 0 -607px;
+}
+
+.icon-home-jifen {
+  background-position: 0 -700px;
+  height: 88px;
+  width: 88px;
+}
+.icon-home-jifen:active, .icon-home-jifen.home-jifen-active {
+  background-position: 0 -793px;
+}
+
+.icon-home-kefu {
+  background-position: 0 -886px;
+  height: 88px;
+  width: 88px;
+}
+.icon-home-kefu:active, .icon-home-kefu.home-kefu-active {
+  background-position: 0 -979px;
+}
+
+.icon-home-leftarrow {
+  background-position: 0 -1072px;
+  height: 34px;
+  width: 22px;
+}
+
+.icon-home-map {
+  background-position: 0 -1111px;
+  height: 88px;
+  width: 88px;
+}
+.icon-home-map:active, .icon-home-map.home-map-active {
+  background-position: 0 -1204px;
+}
+
+.icon-home-part {
+  background-position: 0 -1297px;
+  height: 88px;
+  width: 88px;
+}
+.icon-home-part:active, .icon-home-part.home-part-active {
+  background-position: 0 -1390px;
+}
+
+.icon-home-rightarrow {
+  background-position: 0 -1483px;
+  height: 34px;
+  width: 22px;
+}
+
+.icon-home-search {
+  background-position: 0 -1522px;
+  height: 24px;
+  width: 23px;
+}
+
+.icon-home-vip {
+  background-position: 0 -1551px;
+  height: 40px;
+  width: 40px;
+}
+
+.icon-home-youhuiquan {
+  background-position: 0 -1596px;
+  height: 88px;
+  width: 88px;
+}
+.icon-home-youhuiquan:active, .icon-home-youhuiquan.home-youhuiquan-active {
+  background-position: 0 -1689px;
+}
+
+.icon-member-about {
+  background-position: 0 -1782px;
+  height: 32px;
+  width: 32px;
+}
+
+.icon-member-coupon {
+  background-position: 0 -1819px;
+  height: 25px;
+  width: 34px;
+}
+
+.icon-member-gift {
+  background-position: 0 -1849px;
+  height: 33px;
+  width: 28px;
+}
+
+.icon-member-integration {
+  background-position: 0 -1887px;
+  height: 35px;
+  width: 36px;
+}
+
+.icon-member-notice {
+  background-position: 0 -1927px;
+  height: 22px;
+  width: 28px;
+}
+
+.icon-member-order {
+  background-position: 0 -1954px;
+  height: 32px;
+  width: 32px;
+}
+
+.icon-member-storeup {
+  background-position: 0 -1991px;
+  height: 34px;
+  width: 32px;
+}
+
+.icon-member-vip {
+  background-position: 0 -2030px;
+  height: 29px;
+  width: 36px;
+}
+
+.icon-memberintegral-textbg {
+  background-position: 0 -2064px;
+  height: 60px;
+  width: 142px;
+}
+
+.icon-nav-back {
+  background-position: 0 -2129px;
+  height: 36px;
+  width: 20px;
+}
+
+.icon-nav-home {
+  background-position: 0 -2170px;
+  height: 51px;
+  width: 56px;
+}
+
+.icon-register-checked {
+  background-position: 0 -2226px;
+  height: 60px;
+  width: 60px;
+}
+
+.icon-register-code {
+  background-position: 0 -2291px;
+  height: 27px;
+  width: 34px;
+}
+
+.icon-register-lineup {
+  background-position: 0 -2323px;
+  height: 34px;
+  width: 24px;
+}
+
+.icon-register-telephone {
+  background-position: 0 -2362px;
+  height: 40px;
+  width: 26px;
+}
+
+.icon-register-unchecked {
+  background-position: 0 -2407px;
+  height: 60px;
+  width: 60px;
+}
+
+.icon-right-arrow {
+  background-position: 0 -2472px;
+  height: 26px;
+  width: 16px;
+}
+
+/**
+ * 二.  将px转换为rem     参考: http://www.cnblogs.com/xljzlw/p/4771103.html
+ **/
+.icon-public, .icon-down-triangle, .icon-filter, .icon-home-activity, .icon-home-competitive, .icon-home-dianpu, .icon-home-huiyuan, .icon-home-huodong, .icon-home-jifen, .icon-home-kefu, .icon-home-leftarrow, .icon-home-map, .icon-home-part, .icon-home-rightarrow, .icon-home-search, .icon-home-vip, .icon-home-youhuiquan, .icon-member-about, .icon-member-coupon, .icon-member-gift, .icon-member-integration, .icon-member-notice, .icon-member-order, .icon-member-storeup, .icon-member-vip, .icon-memberintegral-textbg, .icon-nav-back, .icon-nav-home, .icon-register-checked, .icon-register-code, .icon-register-lineup, .icon-register-telephone, .icon-register-unchecked, .icon-right-arrow {
+  display: inline-block;
+  background-size: 8.875rem 156.125rem;
+}
+
+.icon-nav-home {
+  width: 3.5rem;
+  height: 3.1875rem;
+  background-position: 0 -135.625rem;
+}
+
+.icon-nav-back {
+  width: 1.25rem;
+  height: 2.25rem;
+  background-position: 0 -133.0625rem;
+}
+
+/*.icon-nav-goldenback {
+  @include sprite-info($icons, nav-goldenback);
+}
+
+.icon-nav-goldenhome {
+  @include sprite-info($icons, nav-goldenhome);
+}*/
+.icon-right-arrow {
+  width: 1rem;
+  height: 1.625rem;
+  background-position: 0 -154.5rem;
+}
+
+.icon-home-search {
+  width: 1.4375rem;
+  height: 1.5rem;
+  background-position: 0 -95.125rem;
+}
+
+.icon-home-competitive {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-position: 0 -6.0625rem;
+}
+
+.icon-home-vip {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-position: 0 -96.9375rem;
+}
+
+.icon-home-activity {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-position: 0 -3.25rem;
+}
+
+.icon-home-huiyuan {
+  width: 5.5rem;
+  height: 5.5rem;
+  background-position: 0 -20.5rem;
+}
+
+.icon-home-dianpu {
+  width: 5.5rem;
+  height: 5.5rem;
+  background-position: 0 -8.875rem;
+}
+
+.icon-home-dianpu:active {
+  background-position: 0 -14.6875rem;
+}
+
+.icon-home-huiyuan:active {
+  background-position: 0 -26.3125rem;
+}
+
+.icon-home-jifen:active {
+  background-position: 0 -49.5625rem;
+}
+
+.icon-home-kefu:active {
+  background-position: 0 -61.1875rem;
+}
+
+.icon-home-map:active {
+  background-position: 0 -75.25rem;
+}
+
+.icon-home-part:active {
+  background-position: 0 -86.875rem;
+}
+
+.icon-home-huodong:active {
+  background-position: 0 -37.9375rem;
+}
+
+.icon-home-youhuiquan:active {
+  background-position: 0 -105.5625rem;
+}
+
+.icon-home-huodong {
+  width: 5.5rem;
+  height: 5.5rem;
+  background-position: 0 -32.125rem;
+}
+
+.icon-home-jifen {
+  width: 5.5rem;
+  height: 5.5rem;
+  background-position: 0 -43.75rem;
+}
+
+.icon-home-kefu {
+  width: 5.5rem;
+  height: 5.5rem;
+  background-position: 0 -55.375rem;
+}
+
+.icon-home-leftarrow {
+  width: 1.375rem;
+  height: 2.125rem;
+  background-position: 0 -67rem;
+}
+
+.icon-home-rightarrow {
+  width: 1.375rem;
+  height: 2.125rem;
+  background-position: 0 -92.6875rem;
+}
+
+.icon-home-map {
+  width: 5.5rem;
+  height: 5.5rem;
+  background-position: 0 -69.4375rem;
+}
+
+.icon-home-part {
+  width: 5.5rem;
+  height: 5.5rem;
+  background-position: 0 -81.0625rem;
+}
+
+.icon-home-youhuiquan {
+  width: 5.5rem;
+  height: 5.5rem;
+  background-position: 0 -99.75rem;
+}
+
+.icon-filter {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  background-position: 0 -0.75rem;
+}
+
+.icon-down-triangle {
+  width: 0.875rem;
+  height: 0.4375rem;
+  background-position: 0 0;
+}
+
+.icon-register-code {
+  width: 2.125rem;
+  height: 1.6875rem;
+  background-position: 0 -143.1875rem;
+}
+
+.icon-register-telephone {
+  width: 1.625rem;
+  height: 2.5rem;
+  background-position: 0 -147.625rem;
+}
+
+.icon-register-checked {
+  width: 3.75rem;
+  height: 3.75rem;
+  background-position: 0 -139.125rem;
+}
+
+.icon-register-unchecked {
+  width: 3.75rem;
+  height: 3.75rem;
+  background-position: 0 -150.4375rem;
+}
+
+.icon-member-about {
+  width: 2rem;
+  height: 2rem;
+  background-position: 0 -111.375rem;
+}
+
+.icon-member-coupon {
+  width: 2.125rem;
+  height: 1.5625rem;
+  background-position: 0 -113.6875rem;
+}
+
+.icon-member-gift {
+  width: 1.75rem;
+  height: 2.0625rem;
+  background-position: 0 -115.5625rem;
+}
+
+.icon-member-integration {
+  width: 2.25rem;
+  height: 2.1875rem;
+  background-position: 0 -117.9375rem;
+}
+
+.icon-member-notice {
+  width: 1.75rem;
+  height: 1.375rem;
+  background-position: 0 -120.4375rem;
+}
+
+.icon-member-order {
+  width: 2rem;
+  height: 2rem;
+  background-position: 0 -122.125rem;
+}
+
+.icon-member-storeup {
+  width: 2rem;
+  height: 2.125rem;
+  background-position: 0 -124.4375rem;
+}
+
+.icon-member-vip {
+  width: 2.25rem;
+  height: 1.8125rem;
+  background-position: 0 -126.875rem;
+}
+
+.icon-register-lineup {
+  width: 1.5rem;
+  height: 2.125rem;
+  background-position: 0 -145.1875rem;
+}
+
+.icon-memberintegral-textbg {
+  width: 8.875rem;
+  height: 3.75rem;
+  background-position: 0 -129rem;
+}

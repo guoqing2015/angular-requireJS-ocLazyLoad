@@ -1,0 +1,796 @@
+body, html {
+  font-family: sans-serif;
+  font-size: 50%;
+}
+
+.content {
+  font-size: 1.75rem;
+}
+
+.background-content {
+  background: #E8ECF0;
+}
+
+.scroll-content {
+  background: #e8ecf0;
+  position: absolute;
+  top: 5.625rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.home-content {
+  top: 0 !important;
+}
+
+.home-top {
+  height: 30.375rem;
+  width: 100%;
+  background: #06192E url(../images/page_header_bg.png) no-repeat;
+  background-size: 100% 100%;
+  padding: 1.875rem 1.25rem 0;
+  overflow: visible;
+}
+.home-top .fix-nav {
+  position: fixed;
+  top: 0;
+}
+.home-top .home-logo-wrap {
+  margin: 1.875rem 0;
+}
+.home-top .home-logo {
+  height: 8.5rem;
+  width: 11.6875rem;
+}
+
+.home-body {
+  background: #06192E;
+  padding: 0 1.25rem 2.5rem;
+}
+
+.home-search-wrap {
+  height: 4.375rem;
+  line-height: 4.375rem;
+  border: 1px solid #4F6773;
+  border-radius: 4.375rem;
+  text-align: center;
+  background: #214C8E;
+}
+.home-search-wrap em {
+  top: 0.125rem;
+}
+
+.home-search {
+  display: inline-block;
+  height: 100%;
+  border: none;
+  border-radius: 1.5rem;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.home-nav {
+  z-index: 999;
+  white-space: nowrap;
+}
+.home-nav .home-nav-inner {
+  padding: 0 1.25rem;
+}
+.home-nav li {
+  float: left;
+  color: #fee662;
+  text-align: center;
+  margin: 0 1.875rem 0 0;
+}
+.home-nav li > div {
+  height: 5.625rem;
+  width: 5.5rem;
+  line-height: 5.625rem;
+  margin: 0 auto 0.625rem;
+}
+.home-nav li > p {
+  width: 5.5rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-listitem dt {
+  height: 3.75rem;
+  width: 100%;
+  line-height: 3.75rem;
+  color: #fee662;
+}
+.home-listitem dt h3 {
+  display: inline-block;
+}
+.home-listitem dt span {
+  display: inline-block;
+  height: 100%;
+  width: 3.75rem;
+}
+.home-listitem dd {
+  height: 15rem;
+}
+
+#homeLeftarrow, #homeRightarrow {
+  position: absolute;
+  top: 2.5rem;
+  opacity: 0.9;
+}
+
+#homeLeftarrow {
+  left: 0rem;
+}
+
+#homeRightarrow {
+  right: 0rem;
+}
+
+@media screen and (max-width: 321px) {
+  .swiper-container {
+    padding-left: 0px !important;
+  }
+
+  #homeLeftarrow {
+    left: -0.625rem;
+  }
+
+  #homeRightarrow {
+    right: -0.625rem;
+  }
+}
+.slideBox {
+  position: relative;
+  overflow: hidden;
+  padding: 0px !important;
+}
+
+.slideBox ul {
+  border: none;
+}
+
+.slideBox .btn-container {
+  position: absolute;
+  height: 1.75rem;
+  line-height: 1.75rem;
+  bottom: 0.625rem;
+  right: 0;
+  z-index: 1;
+}
+
+.slideBox .btn-container li {
+  padding: 0;
+  display: inline-block;
+  height: 0.625rem;
+  width: 0.625rem;
+  border-radius: 0.625rem;
+  background: #999;
+  text-indent: -9999px;
+  overflow: hidden;
+  margin: 0 0.625rem;
+  border: none;
+}
+
+.slideBox .btn-container li.on {
+  background: #FEE662;
+}
+
+.slideBox .pic-container {
+  position: relative;
+  z-index: 0;
+  /* height:0; */
+  height: 0;
+}
+
+.slideBox .pic-container li {
+  padding: 0;
+  position: relative;
+  text-align: center;
+}
+
+.slideBox .pic-container li img {
+  vertical-align: top;
+  width: 100%;
+}
+
+.slideBox .pic-container li a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ani-banner {
+  -webkit-transition: height .4s ease-out;
+  transition: height .4s ease-out;
+}
+
+.register {
+  top: 0;
+  background: #06182E;
+}
+
+.register-top {
+  height: 30.375rem;
+  width: 100%;
+  background: url(../images/page_header_bg.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.register-content {
+  position: relative;
+  top: -6.25rem;
+}
+
+.register-logo-wrap {
+  margin: 2.92188rem 0 0 0;
+}
+.register-logo-wrap .register-logo {
+  height: 8.5rem;
+  width: 11.6875rem;
+}
+
+.register-form {
+  padding: 0 1.875rem;
+  padding-bottom: 1.875rem;
+}
+.register-form li {
+  height: 5rem;
+  line-height: 5rem;
+  position: relative;
+  border-radius: 0.5rem;
+  border: 1px solid #394959;
+  background: #1B293A;
+}
+.register-form .register-code {
+  height: 4.125rem;
+  width: 10.25rem;
+  position: relative;
+  top: 0.3125rem;
+  right: 0.3125rem;
+  line-height: 3.625rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ff8400;
+  color: #ff8400;
+  float: right;
+}
+.register-form .register-button {
+  height: 5rem;
+  line-height: 5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.register-form .register-pact {
+  padding: 0.375rem 0;
+}
+.register-form .register-pact > label {
+  margin-top: 0.75rem;
+}
+.register-form span {
+  display: inline-block;
+  height: 3rem;
+  width: 4.25rem;
+  border-right: 1px solid #747C86;
+  margin-top: 0.9375rem;
+}
+.register-form span .icon-register-telephone {
+  margin: 0.25rem 0 0 1.25rem;
+}
+.register-form span .icon-register-code {
+  margin: 0.5625rem 0 0 1rem;
+}
+.register-form input {
+  display: block;
+  float: left;
+  margin-top: 1.3125rem;
+}
+
+.member-header {
+  background: #111E32 url(../images/member_header_bg.png);
+  background-size: 100% 100%;
+  height: 16.25rem;
+  width: 100%;
+}
+.member-header .member-header-box {
+  height: 8rem;
+  width: 8rem;
+  margin: 2.25rem auto 1.875rem;
+  background: #061B30;
+  border: 0.25rem solid #3F485C;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.member-header .member-header-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.member-header .member-notice {
+  top: 1.875rem;
+  right: 1.875rem;
+}
+
+.member-nav {
+  height: 5.5rem;
+  line-height: 5.5rem;
+  background: #ffffff;
+}
+.member-nav .line {
+  height: 2.75rem;
+  width: 0;
+  right: 0;
+  top: 1.125rem;
+}
+.member-nav .icon-member-vip {
+  top: 0.25rem;
+}
+.member-nav .icon-member-storeup {
+  top: 0.25rem;
+}
+
+.member-list {
+  width: 100%;
+}
+
+.member-listitem:first-child {
+  height: 6.125rem;
+  line-height: 6.125rem;
+}
+.member-listitem:first-child .member-pic-wrap {
+  height: 6.125rem;
+}
+.member-listitem:first-child .spin-loadframe {
+  margin-top: 1.5625rem;
+}
+
+.member-listitem {
+  position: relative;
+  background: #ffffff;
+  padding-right: 4.6875rem;
+  height: 5.5rem;
+  line-height: 5.5rem;
+}
+.member-listitem > div {
+  left: 0;
+}
+.member-listitem .red-circle {
+  height: 1.875rem;
+  width: 1.875rem;
+  line-height: 1.875rem;
+  display: inline-block;
+  background: #F35125;
+  border-radius: 100%;
+  padding: 0.25rem;
+}
+.member-listitem .member-pic-wrap {
+  height: 5.5rem;
+  width: 5.625rem;
+  display: block;
+  float: left;
+  position: relative;
+}
+.member-listitem .icon-right-arrow {
+  top: 1.9375rem;
+  right: 1.875rem;
+  position: absolute;
+}
+
+.label-state {
+  color: #ffffff;
+  line-height: 0;
+  padding: 0.125rem 0.375rem;
+}
+
+.label-cash {
+  background: #C24FED;
+}
+
+.label-material {
+  background: #62AE09;
+}
+
+.label-voucher {
+  background: #4CA4FF;
+}
+
+.label-discount {
+  background: #FF8400;
+}
+
+.label-vip {
+  background: #FF735C;
+}
+
+.interalmall-order, .coupon-order {
+  background: #ffffff;
+  height: 5rem;
+  width: 100%;
+  line-height: 5rem;
+}
+
+.intermall-order-section p, .coupon-order p {
+  float: left;
+  text-align: center;
+  font-size: 1.75rem;
+  position: relative;
+}
+.intermall-order-section p .line, .coupon-order p .line {
+  height: 2.5rem;
+  width: 0;
+  position: absolute;
+  top: 1.25rem;
+  right: 0;
+}
+.intermall-order-section .icon-down-triangle, .coupon-order .icon-down-triangle {
+  position: relative;
+  top: -0.375rem;
+}
+
+.interalmall-list, .coupon-list {
+  background: #ffffff;
+}
+
+.interalmall-listitem, .coupon-listitem {
+  padding: 1.25rem;
+}
+.interalmall-listitem .coupon-listitem-quan, .coupon-listitem .coupon-listitem-quan {
+  height: 1.75rem;
+}
+
+.interalmall-img-wrap, .coupon-img-wrap {
+  height: 10.375rem;
+  width: 13.75rem;
+  text-align: center;
+  border: 1px solid #e4e5e6;
+  margin-right: 1.25rem;
+  background: #f6f6f6;
+}
+.interalmall-img-wrap img, .coupon-img-wrap img {
+  vertical-align: middle;
+}
+
+.interalmall-listitem-cont h3, .coupon-listitem-cont h3 {
+  color: #000000;
+}
+
+.coupon-listitem-cont .po-absolute {
+  right: 0;
+  bottom: 0.375rem;
+}
+
+.interalmall-order-more {
+  height: 5rem;
+  width: 5rem;
+}
+.interalmall-order-more .icon-filter {
+  left: 50%;
+  top: 50%;
+  margin-top: -1.09375rem;
+  margin-left: -1.09375rem;
+}
+
+.intermall-order-section {
+  margin-right: 0.125rem;
+}
+
+.interalmall-member {
+  line-height: 100%;
+}
+
+.interalmall-other p span {
+  display: block;
+}
+.interalmall-other button {
+  border-radius: 0.5rem;
+  height: 3.125rem;
+  width: 7.5rem;
+  color: #ffffff;
+  margin-top: 0.3125rem;
+}
+
+.coupondetail-content {
+  padding-bottom: 2.5rem;
+}
+
+.coupondetail-top .coupondetail-img-wrap {
+  line-height: 0;
+}
+.coupondetail-top .coupondetail-img-wrap img {
+  width: 100%;
+  height: 100%;
+}
+.coupondetail-top li {
+  height: 5.5rem;
+  line-height: 5.5rem;
+  padding: 0 1.875rem;
+  background: #ffffff;
+}
+.coupondetail-top .coupondetail-validity {
+  position: relative;
+  top: -1px;
+}
+.coupondetail-top .coupondetail-text p {
+  display: inline-block;
+}
+.coupondetail-top .coupondetail-text p:first-child {
+  margin-right: 0.1875rem;
+}
+.coupondetail-top .coupondetail-text button {
+  height: 3.75rem;
+  width: 10rem;
+  line-height: 3.75rem;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  margin-top: 0.875rem;
+}
+
+.coupondetail-explain {
+  background: #ffffff;
+}
+
+.coupondetail-article {
+  padding-bottom: 1.875rem;
+}
+.coupondetail-article h1 {
+  height: 5.5rem;
+  line-height: 5.5rem;
+  margin-left: 1.25rem;
+}
+
+.coupondetail-shop .coupondetail-shoplogo {
+  height: 3.75rem;
+  width: 3.75rem;
+  margin-top: 0.875rem;
+  margin-right: 0.625rem;
+}
+.coupondetail-shop .icon-right-arrow {
+  margin: 1.9375rem 0 0 1.25rem;
+}
+
+.coupondetail-article-cont {
+  padding: 0 1.875rem;
+}
+.coupondetail-article-cont p {
+  line-height: 1.5;
+}
+
+.membercoupon-listitem {
+  background: #ffffff;
+  margin: 1.25rem;
+}
+.membercoupon-listitem .membercoupon-part1 {
+  height: 8.375rem;
+}
+.membercoupon-listitem .membercoupon-part2 {
+  height: 4.25rem;
+  line-height: 4.25rem;
+  padding: 0 1.25rem;
+}
+.membercoupon-listitem .membercoupon-part2 button {
+  height: 3rem;
+  width: 8.75rem;
+  margin-top: 0.625rem;
+  border-radius: 0.5rem;
+}
+.membercoupon-listitem .stamp {
+  background-repeat: repeat-x;
+  background-size: 0.625rem 0.625rem;
+  width: 100%;
+  height: 0.625rem;
+  top: 0;
+}
+.membercoupon-listitem .stamp-red {
+  background-image: url(../images/disperse/stamp_red.png);
+}
+.membercoupon-listitem .stamp-blue {
+  background-image: url(../images/disperse/stamp_blue.png);
+}
+
+.membercoupon-pic {
+  height: 5.25rem;
+  width: 6.875rem;
+  margin: 2rem 1.25rem 0 1.25rem;
+}
+
+.membercoupon-number {
+  width: 6.25rem;
+  overflow: hidden;
+}
+.membercoupon-number .table {
+  width: 100%;
+  margin-top: 0.75rem;
+  height: 6.875rem;
+}
+
+.membercoupon-nolist {
+  height: 5.5rem;
+  line-height: 5.5rem;
+}
+
+.membercoupon-listitem.canuse .color1 {
+  color: #333333;
+}
+.membercoupon-listitem.canuse .color2 {
+  color: #999999;
+}
+.membercoupon-listitem.canuse .color3 {
+  color: #ff8400;
+}
+.membercoupon-listitem.canuse button {
+  background: #ff8400;
+}
+
+.membercoupon-listitem.nocanuse .color1 {
+  color: #a6a6a6;
+}
+.membercoupon-listitem.nocanuse .color2 {
+  color: #dbdbdb;
+}
+.membercoupon-listitem.nocanuse .color3 {
+  color: #d3d3d3;
+}
+.membercoupon-listitem.nocanuse button {
+  background: #BFBFBF;
+}
+
+.membercoupon-scancodebox {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.7s;
+  -webkit-transition: opacity 0.7s;
+  z-index: 1000;
+  padding: 1.25rem;
+  background: #ffffff;
+  visibility: hidden;
+}
+
+.showcode {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.membercoupon-scancodebox.qrCode {
+  top: 25%;
+}
+
+.membercoupon-scancodebox.barCode {
+  visibility: hidden;
+  top: 35%;
+}
+
+.membercoupon-scancode {
+  /*em {
+    top:0;
+    right:0;
+  }*/
+}
+
+.membercard-top .membercard-barcode {
+  padding: 3rem 0 0.625rem;
+  margin: 0 1.875rem;
+}
+.membercard-top .membercard-barcode img {
+  max-width: 100%;
+  margin: 0 0.625rem;
+}
+.membercard-top .membercard-main {
+  padding: 0 1.875rem 1.875rem;
+}
+.membercard-top .membercard-main img {
+  width: 100%;
+  margin: 2.5rem 0;
+}
+
+.membercard-explain {
+  padding-bottom: 2.5rem;
+}
+.membercard-explain dl {
+  padding: 0 1.875rem 0 1.25rem;
+}
+.membercard-explain dd {
+  padding-left: 1.875rem;
+}
+
+.membercard-explain-tit {
+  height: 5rem;
+  line-height: 5rem;
+  line-height: 5rem;
+  margin-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.rotate-card {
+  -webkit-animation: card-rotate 8s linear 1s infinite normal;
+  animation: card-rotate 8s linear 1s infinite normal;
+  perspective-origin: top;
+}
+
+@keyframes card-rotate {
+  0% {
+    transform: rotateY(0) rotateX(0);
+  }
+  50% {
+    transform: rotateY(90deg) rotateX(0);
+  }
+  50.001% {
+    transform: rotateY(270deg) rotateX(0);
+  }
+  100% {
+    transform: rotateY(360deg) rotateX(0);
+  }
+}
+@-webkit-keyframes card-rotate {
+  0% {
+    -webkit-transform: rotateY(0) rotateX(0);
+  }
+  50% {
+    -webkit-transform: rotateY(90deg) rotateX(0);
+  }
+  50.001% {
+    -webkit-transform: rotateY(270deg) rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg) rotateX(0);
+  }
+}
+.memberintegral-top {
+  height: 9.25rem;
+  width: 100%;
+  line-height: 9.25rem;
+  background: url(../images/disperse/memberIntegral_bg.png) no-repeat;
+  background-size: 100% 100%;
+}
+.memberintegral-top #SumPointNum {
+  top: 0.4375rem;
+}
+.memberintegral-top img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
+  margin: 2.125rem 1.25rem 0 1.875rem;
+}
+.memberintegral-top div {
+  height: 3.75rem;
+  width: 8.875rem;
+  line-height: 3.75rem;
+  margin: 2.75rem 0 0 0;
+}
+.memberintegral-top .memberintegral-text {
+  height: 100%;
+  width: 100%;
+}
+.memberintegral-top .memberintegral-text em {
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.memberintegral-top .memberintegral-text span {
+  z-index: 2;
+}
+
+.memberintegral-main h3 {
+  height: 2.875rem;
+  line-height: 2.875rem;
+  padding: 0 1.875rem;
+}
+.memberintegral-main li {
+  padding: 0 1.875rem;
+  height: 6.875rem;
+  line-height: 6.875rem;
+}
+.memberintegral-main .memberintegral-info {
+  margin-top: 1.6875rem;
+}
+
+.spinner-hide .loading {
+  visibility: visible;
+}
+
+.spinner-show .loading {
+  visibility: hidden;
+}
