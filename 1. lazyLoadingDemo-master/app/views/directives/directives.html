@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="page-header">
+        <h1>Directives</h1>
+    </div>
+
+<div class="lead">
+    Each view depends on different resources
+    <button class="btn btn-lg btn-primary pull-right" ng-click="loadServices()">Load Services</button>
+</div>
+
+   <div class="form-group">
+       <label>Select View</label>
+
+       <select class="form-control"
+               ng-disabled="state.disable"
+               ng-options="o.key for o in options"
+               ng-model="option"
+               ng-change="loadResource(option)">
+
+           <option value="">-- choose view --</option>
+       </select>
+
+       <div ng-switch="state.view">
+
+           <div ng-switch-when="first">
+               <div ng-include="'views/first/first.html'"></div>
+           </div>
+
+           <div ng-switch-when="second">
+               <div ng-include="'views/second/second.html'"></div>
+           </div>
+
+       </div>
+
+   </div>
+</div>
+
+
+

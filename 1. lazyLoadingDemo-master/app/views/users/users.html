@@ -1,0 +1,50 @@
+<div class="container">
+
+    <div class="row">
+        <div class="page-header">
+            <h1>Users List
+                <a class="btn btn-success pull-right" href="#/users/edit/new">
+                    <i class="glyphicon glyphicon-plus"></i>
+                </a>
+            </h1>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <!-- Users List Table-->
+        <table class="table table-striped table-responsive">
+
+            <thead>
+            <tr>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Email</td>
+                <td>Phone</td>
+                <td>Address</td>
+                <td>Actions</td>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr ng-repeat="user in users">
+                <td>{{ user.fname }}</td>
+                <td>{{ user.lname }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.phone }}</td>
+                <td>{{ user.address }}</td>
+                <td>
+                    <a class="btn btn-primary" ng-href="#/users/edit/{{ user.id }}">
+                        <i class="glyphicon glyphicon-pencil"></i>
+                    </a>
+                    <a class="btn btn-danger" ng-click="removeUser(user.id)">
+                        <i class="glyphicon glyphicon-remove"></i>
+                    </a>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+
+    </div><!-- /row -->
+</div><!-- /container -->

@@ -1,0 +1,19 @@
+<div class="container">
+
+    <div class="page-header">
+        <h1>Loading Modules</h1>
+    </div>
+
+    <div class="well">
+    <button class="btn btn-primary btn-lg" ng-click="loadModule()">Load Module</button>
+    </div>
+
+    <div ng-if="module.ready">
+
+        <div ng-controller="utilCtrl as util">
+            <p class="lead">{{ util.greeting }}</p>
+        </div>
+
+    </div>
+</div>
+
