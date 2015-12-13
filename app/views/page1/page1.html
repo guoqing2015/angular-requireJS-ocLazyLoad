@@ -1,0 +1,22 @@
+﻿<div class="container" ng-controller="page1Controller as page1">
+
+    <div class="page-header">
+        <h1>page1</h1>
+    </div>
+
+    <div class="well">
+        <button class="btn btn-primary btn-lg" ng-click="loadModule()">Load Module</button>
+    </div>
+
+
+    <p class="lead">{{ page1.message }}</p>
+
+    <div ng-if="module.ready">
+        <div ng-controller="utilCtrl as util">
+            <p class="lead">{{ util.greeting }}</p>
+        </div>
+    </div>
+
+</div>
+
+

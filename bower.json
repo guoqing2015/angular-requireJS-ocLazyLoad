@@ -1,0 +1,32 @@
+{
+  "name": "smartApp",
+  "version": "0.0.1",
+  "homepage": "",
+  "authors": [
+    "GuoQing <guoqing2015@gmail.com>"
+  ],
+  "description": "project for lazy loading in angularjs",
+  "main": "index.html",
+  "keywords": [
+    "lazy",
+    "loading",
+    "angularjs",
+    "requirejs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-route": "~1.4.8",
+    "angular-touch": "~1.4.8",
+    "requirejs": "~2.1.22",
+    "ocLazyLoad": "~1.0.9"
+  }
+}
