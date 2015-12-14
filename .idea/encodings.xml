@@ -3,8 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/1. lazyLoadingDemo-master" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/2. angular-lazy-load-require-master" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/3. myDemoApp1/app" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/3. myDemoApp1/bower.json" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/3. myDemoApp1/bower_components" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/3. myDemo1/app" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/3. myDemo1/bower.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/3. myDemo1/bower_components" charset="UTF-8" />
   </component>
 </project>
