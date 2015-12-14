@@ -1,5 +1,5 @@
 define( function () {
-    app = angular.module('app', ['ngRoute','oc.lazyLoad', 'ajoslin.mobile-navigate']);
+    var app = angular.module('app', ['ngRoute','oc.lazyLoad', 'ajoslin.mobile-navigate']);
 
     /**
      * 路由配置
@@ -11,7 +11,7 @@ define( function () {
              * configure the ocLazyLoader to use requireJS as the loader
              */
             $ocLazyLoadProvider.config({
-                loadedModules: ['app'],
+                //loadedModules: ['app'],
                 asyncLoader: require
             });
 
@@ -28,6 +28,7 @@ define( function () {
             $routeProvider
                 .when('/home', {
                     templateUrl: 'views/home/home.html',
+                    controller: "homeController as home",
                     resolve: {
                         load: ['$ocLazyLoad' ,function($ocLazyLoad) {
                             return $ocLazyLoad.load ({
@@ -39,11 +40,13 @@ define( function () {
                 })
                 .when('/shop', {
                     templateUrl: 'views/shop/shop.html',
+                    controller: "shopController as shop",
                     resolve: {
                         load:  ['$ocLazyLoad', function($ocLazyLoad) {
                             return $ocLazyLoad.load ({
                                 name: 'shop',
-                                files: ['styles/shop.css', 'views/shop/shop.js', 'scripts/modules/loading.js', 'scripts/modules/modal.js']
+                                //files: ['styles/shop.css', 'views/shop/shop.js', 'scripts/modules/loading.js', 'scripts/modules/modal.js']
+                                files: ['styles/shop.css', 'views/shop/shop.js']
                             });
                         }]
                     }
@@ -54,7 +57,7 @@ define( function () {
                         load:  ['$ocLazyLoad', function($ocLazyLoad) {
                             return $ocLazyLoad.load ({
                                 name: 'page1',
-                                files: ['views/page1/page1.js', 'scripts/modules/loading.js', 'scripts/modules/modal.js']
+                                files: ['views/page1/page1.js']
                             });
                         }]
                     }

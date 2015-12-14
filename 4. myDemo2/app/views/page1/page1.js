@@ -7,7 +7,9 @@
 
 angular.module('page1',[]);
 
-angular.module('page1').controller('page1Controller',['$scope', 'service1', '$ocLazyLoad', function($scope, service1, $ocLazyLoad){
+angular.module('page1').controller('page1Controller',['$scope', 'service1', '$ocLazyLoad', function($scope, service1, $ocLazyLoad, AJAX){
+
+        //console.log(AJAX);
 
         this.message = service1.getMessage();
 
@@ -35,3 +37,6 @@ angular.module('page1').controller('page1Controller',['$scope', 'service1', '$oc
 angular.module('page1').factory('service1', function(){
     return{getMessage:function(){return 'Hello from lazy loaded service';}};
 });
+
+
+
